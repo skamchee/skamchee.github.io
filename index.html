@@ -4,5 +4,29 @@
 </head>
 <body>
 <h1>some text</h1>
+
+<pre>
+C is call by value. Passing a variable into a called function actually passes a copy, so the called function cannot alter the variable in the calling function.
+However, you can edit the variable by passing in a pointer (a reference) to the variable. This means a copy of the pointer is passed to the called function. The called function can follow the pointer to edit the underlying value.
+</pre>
+
+<pre>
+Tuesday Aug 18 2015
+
+Compilation involves four stages:
+
+1. Preprocessing
+	#define HEIGHT 20
+
+2. Compilation proper/Assembly 
+	gcc -c head.c (Does not link, produces a head.o object file)
+
+4. Linking
+	gcc -o head.o arm.o leg.o body.o
+
+Source
+https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html#Overall-Options
+</pre>
+
 </body>
 </html>
